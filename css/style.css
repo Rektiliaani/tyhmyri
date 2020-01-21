@@ -65,7 +65,7 @@
 /* Custom CSS Styles */
 #cssmenu {
   width: 200px;
-  background: #EEE9E9;
+  background: #333333;
   font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
   zoom: 1;
   font-size: 12px;
@@ -198,7 +198,7 @@ body{
   padding:0;
   margin:0;
   background-color:#EEE9E9;
-  border:5px solid #EEE9E9;
+  border:5px solid #333333;
 }
 
 .container{
@@ -239,7 +239,7 @@ ul{
 }
 
 header{
-  background:#EEE9E9;
+  background:#333333;
   color:#ffffff;
   padding-top:30px;
   min-height:70px;

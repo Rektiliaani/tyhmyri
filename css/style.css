@@ -346,6 +346,17 @@ header a:hover{
   font-size:20px;
 }
 
+#boxesr{
+  margin-top:20px;
+}
+
+#boxesr .boxr{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:30px;
+}
+
 
 #boxes{
   margin-top:20px;
@@ -378,7 +389,7 @@ header a:hover{
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
 }
-#boxes .box img{
+#boxesr .box img{
   width:100px;
   -webkit-animation: rotation 7s infinite linear;
 }

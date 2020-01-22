@@ -355,7 +355,7 @@ header a:hover{
   float:left;
   text-align: center;
   width:30%;
-  padding:10px;
+  padding:30px;
 }
 
 #grad {
@@ -378,7 +378,7 @@ header a:hover{
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
 }
-#boxesr .box img{
+#boxes .box img{
   width:100px;
   -webkit-animation: rotation 7s infinite linear;
 }

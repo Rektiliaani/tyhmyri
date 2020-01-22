@@ -6,7 +6,35 @@
     <title>Tyhmyri</title>
     <link rel="stylesheet" href="./css/style.css">
 	<link rel="shortcut icon" href="./img/unoreverse.jpg" />
+	  	 <div id="clockbox"></div>
+
+<script type="text/javascript">
+var tday=["Söndag","Mondag","Tisdag","Onsdag","Thursdag","Fredag","Lördag"];
+var tmonth=["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
   </head>	
+
   <body>
   <script src="js/konami.js"></script>
    
@@ -17,29 +45,22 @@
 >
       </div>
 	  <div id='cssmenu'>
+<!--
 <ul>
    <li><a href='index.html'><span>Etusivu</span></a></li>
    <li class='active has-sub'><a href='#'><span>Tyhmyri</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Tuhmeliini</span></a>
-            <ul>
-               <li><a href='#'><span>Tuhmeliina</span></a></li>
-               <li class='last'><a href='#'><span>Tuhmeliinuli</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>Tuhmuuni</span></a>
-            <ul>
-               <li><a href='#'><span>Tuhertaja</span></a></li>
-               <li class='last'><a href='#'><span>Tuhnutin</span></a></li>
-            </ul>
-         </li>
-      </ul>
+    <ul>
+       <li class='has-sub'><a href='#'><span>Tuhmeliini</span></a>
+     </li>
+    <li class='has-sub'><a href='#'><span>Tuhmeliina</span></a>       
    </li>
-   <li><a href='placeholder.html'><span>Tyhmäpää</span></a></li>
-   <li class='last'><a href='#'><span>Pälli</span></a></li>
-</ul>
+  </ul>
+   </li>
+  <li><a href='placeholder.html'><span>Tyhmäpää</span></a></li>
+  <li class='last'><a href='#'><span>Pälli</span></a></li>
+  </ul>
 </div>
-
+-->
 
 
     </section>
@@ -61,10 +82,10 @@
         </div>
         <div class="box">
 		<a href="https://steampowered.com/id/hiinakava">
-          <img src="./img/pitka.png">
+          <img src="./img/10l.png">
 		  </a>
-          <h3>Pitkänen</h3>
-          <p>:pitknen:</p>
+          <h3>Ämpäri</h3>
+          <p>:10LPUNAINEN:</p>
         </div>
       </div>
     </section>

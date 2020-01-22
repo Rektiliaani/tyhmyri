@@ -370,7 +370,7 @@ header a:hover{
 
 }
 #boxes .box img{
-  width:50px;
+  width:100px;
   transition: transform 0.2s;
 }
 .box img:hover {
@@ -379,7 +379,7 @@ header a:hover{
     transform: scale(1.1); 
 }
 #boxesr .box img{
-  width:90px;
+  width:100px;
   -webkit-animation: rotation 7s infinite linear;
 }
 @-webkit-keyframes rotation {

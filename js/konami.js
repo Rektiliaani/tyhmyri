@@ -38,10 +38,10 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
-  document.body.style.backgroundImage = "url('images/unoreverse.jpg')";
+  document.body.style.backgroundImage = "url('img/unoreverse.jpg')";
 
   var audio = new Audio('audio/hei.mp3');
   audio.play();
 
-  alert("NO U");
+  alert("SINÄ ITE");
 }

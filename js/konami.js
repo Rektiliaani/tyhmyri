@@ -38,7 +38,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
-  document.body.style.backgroundImage = "url('img/unoreverse.jpg')";
+  document.body.style.backgroundImage = "url('img/gerhard.jpg')";
 
   var audio = new Audio('audio/hei.mp3');
   audio.play();

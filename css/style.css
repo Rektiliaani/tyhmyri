@@ -355,7 +355,7 @@ header a:hover{
   float:left;
   text-align: center;
   width:30%;
-  padding:30px;
+  padding:50px;
 }
 
 
@@ -367,7 +367,7 @@ header a:hover{
   float:left;
   text-align: center;
   width:10%;
-  padding:30px;
+  padding:50px;
 }
 
 #grad {
@@ -439,7 +439,7 @@ div.terms{
 }
 footer{
   padding:20px;
-  margin-top:20px;
+  margin-top:50px;
   color:#ffffff;
   background-color:#FE2E9A;
   text-align: center;

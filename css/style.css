@@ -329,7 +329,8 @@ header a:hover{
     transform: translate3d(0, -10px, 0);
   }
 }
-
+#inga{
+}
 #showcase h1{
   margin-top:100px;
   font-size:55px;

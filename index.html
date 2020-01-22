@@ -6,7 +6,24 @@
     <title>Tyhmyri</title>
     <link rel="stylesheet" href="./css/style.css">
 	<link rel="shortcut icon" href="./img/unoreverse.jpg" />
+	  	  <script sfunction startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}">
+		  </script>
   </head>	
+
   <body>
   <script src="js/konami.js"></script>
    

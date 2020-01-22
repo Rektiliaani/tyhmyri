@@ -390,7 +390,7 @@ header a:hover{
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
 }
-#boxesr .box img{
+#boxesr .boxr img{
   width:100px;
   -webkit-animation: rotation 7s infinite linear;
 }

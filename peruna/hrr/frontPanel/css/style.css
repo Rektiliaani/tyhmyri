@@ -1,0 +1,61 @@
+
+
+
+.container{
+  width:80%;
+    margin:auto;
+  overflow:hidden;
+	padding:35px;
+}
+
+
+header{
+  background:#333333;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#8A2BE2 3px solid;
+  animation-name: animu;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+
+body{
+  padding:0;
+  margin:0;
+  background-color:#EEE9E9;
+  border:0px solid #333333;
+}
+
+
+
+#showcase{
+  text-align:center;
+}
+
+#boxes{
+  margin-top:25px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:10%;
+  padding:50px;
+}
+
+#boxes .box img{
+  width:100px;
+  transition: transform 0.3s;
+}
+
+.box img:hover {
+    transform: scale(1.5); 
+}
+
+footer{
+  padding:20px;
+  margin-top:50px;
+  text-align: center;
+}
+

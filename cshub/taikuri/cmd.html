@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <div class=container>  
+	  <title>Taikuri</title>
+    <link rel=stylesheet href=./css/style.css>
+	<link rel=shortcut icon href=./img/unoreverse.jpg />
+	  	 <div id=clockbox></div>
+		 <style>
+		body{
+			background-image:url(img/taikuri2.png);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+</style>
+  </head>	
+  <body>
+
+  <script src=js/konami.js></script>
+<br>
+<a href=port.html style=font:30px/3.0;>
+Back
+</a>
+<br>
+<a href=cmd.html target=external style=font:30px/3.0;>
+New tab
+</a>
+
+<h1>
+Misc:
+</h1>
+<div>
+</div>
+<a>
+	sv_cheats 1; <br>
+	sv_infinite_ammo 1;<br>
+	god;<br>
+	sv_showimpacts 1;<br>
+	noclip;<br>
+	mp_limitteams 0;<br>
+	mp_autokick 0;<br>
+	mp_autoteambalance 0;<br>
+	mp_freezetime 0;<br>
+	m_rawinput 1;<br>
+	cl_cmdrate 128;<br>
+	cl_updaterate 128;<br>
+	fps_max 0;<br>
+	r_drawtracers_firstperson 0;<br>
+</a>
+<div>
+
+
+</div>
+
+<h1>
+Bots:
+</h1>
+<div>
+</div>
+<a>
+	bot_add;<br>
+	bot_add_t;<br>
+	bot_add_ct;<br>
+	bot_kick;<br>
+	bot_stop;<br>
+</a>
+<div>
+</div>
+
+<h1>
+Nades:
+</h1>
+<div>
+</div>
+<a>
+	give weapon_hegrenade;<br>
+	give weapon_molotov;<br>
+	give weapon_flashbang;<br>
+	give weapon_smokegrenade;<br>
+	give weapon_decoy;<br>
+</a>
+<div>
+</div>
+<h1>
+Practice:
+</h1>
+<div>
+</div>
+<a>
+	sv_grenade_trajectory 1;<br>
+	sv_showimpacts 1;<br>
+	give weapon_flashbang;<br>
+	give weapon_smokegrenade;<br>
+	give weapon_decoy;<br>
+	cl_grenadepreview 1;<br>
+	sv_rethrow_last_grenade;<br>
+</a>
+<h1>
+Aliases & binds:
+</h1>
+<div>
+</div>
+<a>
+<h3>
+Jump throw:
+</h3>
+</a>
+<br>
+<a>
+	alias +jumpthrow +jump;attack;<br>
+	alias jumpthrow jump;<br>
+	bind bind key +jumpthrow;<br>
+<br>
+<h3>
+Grenade trajectory:
+</h3>
+<br>
+	bind bind key cl_sim_grenade_trajectory 10;<br>
+<br>
+</a>
+<a>
+<h3>
+Bhop (auto):
+</h3>
+</a>
+<br>
+	sv_enablebunnyhopping 1;<br>
+	sv_autobunnyhopping 1;<br>
+	sv_staminamax 0;<br>
+	sv_staminajumpcost 0;<br>
+	sv_staminalandcost 0;<br>
+	sv_staminarecoveryrate 0;<br>
+	sv_airaccelerate 2000;<br>
+	sv_accelerate_use_weapon_speed 0;<br>
+	sv_maxvelocity 3500;<br>
+<a>
+<br>
+<h3>
+Bhop (scroll):
+</h3>
+</a>
+<br>
+<a>
+bind mwheelup +jump;bind mwheeldown +jump;bind space +jump;<br>
+</a>
+<h1>
+Warmup:
+</h1>
+<div>
+</div>
+<a>
+	mp_respawn_immunitytime 0;<br>
+	mp_freezetime 0;<br>
+	mp_roundtime 999999;<br>
+	ak;<br>
+	god;<br>
+	volume 0.01;<br>
+	mp_buy_anywhere 1;<br>
+	mp_buytime 9999999;<br>
+	sv_autobunnyhopping 1;<br>
+	mp_maxmoney 1337;<br>
+	mp_startmoney 1337;<br>
+	mp_afterroundmoney 1337;<br>
+	sv_enablebunnyhopping 1;<br>
+	mp_restartgame 1;<br>
+	fadein;<br>
+</a>
+<h1>
+Weapons:
+</h1>
+<div>
+</div>
+<a>
+	
+
+give weapon_m4a1;<br>
+give weapon_m4a1_silencer;<br>
+give weapon_ak47;<br>
+give weapon_aug;<br>
+give weapon_awp;<br>
+give weapon_famas;<br>
+give weapon_gs3sg1;<br>
+give weapon_galilar;<br>
+give weapon_scar20;<br>
+give weapon_sg556;<br>
+give weapon_ssg08;<br>
+<h3>
+Smg:s:
+</h3>
+give weapon_bizon;<br>
+give weapon_mac10;<br>
+give weapon_mp7;<br>
+give weapon_mp9;<br>
+give weapon_p90;<br>
+give weapon_ump45;<br>
+give weapon_mp5sd;<br>
+<h3>
+Heavy:
+</h3>
+give weapon_m249;<br>
+give weapon_mag7;<br>
+give weapon_negev;<br>
+give weapon_nova;<br>
+give weapon_sawedoff;<br>
+give weapon_xm1014;<br>
+<h3>
+Pistols:
+</h3>
+give weapon_usp_silencer;<br>
+give weapon_deagle;<br>
+give weapon_elite;<br>
+give weapon_fiveseven;<br>
+give weapon_glock;<br>
+give weapon_hkp2000;<br>
+give weapon_p250;<br>
+give weapon_tec9;<br>
+give weapon_cz75a;<br>
+give weapon_revolver;<br>
+<h3>
+Nades:
+</h3>
+give weapon_flashbang;<br>
+give weapon_decoy;<br>
+give weapon_hegrenade;<br>
+give weapon_incgrenade;<br>
+give weapon_molotov;<br>
+give weapon_smokegrenade;<br>
+give weapon_tagrenade;<br>
+give weapon_healthshot;<br>
+<h3>
+Knifes:
+</h3>
+give weapon_knife_ct;<br>
+give weapon_knife_t;<br>
+give weapon_bayonet;<br>
+give weapon_knife_flip;<br>
+give weapon_knife_gut;<br>
+give weapon_knife_karambit;<br>
+give weapon_knife_m9_bayonet;<br>
+give weapon_knife_tactical;<br>
+give weapon_knife_butterfly;<br>
+give weapon_knife_falchion;<br>
+give weapon_knifegg;<br>
+give weapon_knife_survival_bowie;<br>
+<h3>
+Others:
+</h3>
+give weapon_c4;<br>
+give weapon_taser;<br>
+give item_heavyassaultsuit;<br>
+give chicken;<br>
+give weapon_breachcharge;<br>
+give weapon_snowball;<br>
+give weapon_axe;<br>
+give weapon_hammer;<br>
+give weapon_spanner;<br>
+give weapon_tablet;<br>
+give item_cash;<br>
+give weapon_bumpmine;<br>
+give weapon_shield;<br>
+</a>
+<br>
+<h1>
+UI:
+</h1>
+<div>
+</div>
+<a>
+<h3>
+Erkka viewmodel:
+</h3>
+cl_viewmodel_shift_left_amt "2";<br>
+cl_viewmodel_shift_right_amt "2";<br>
+viewmodel_fov "56.000000";<br>
+viewmodel_offset_x "-2.000000";<br>
+viewmodel_offset_y "0.600000";<br>
+viewmodel_offset_z "2.000000";<br>
+viewmodel_presetpos "0";<br>
+viewmodel_recoil "1.0";<br>
+cl_bob_lower_amt "30";<br>
+cl_bobamt_lat "2";<br>
+cl_bobamt_vert "2";<br>
+cl_bobcycle "0.980000";<br>
+
+<h3>
+S1mple viewmodel(?):
+</h3>
+viewmodel_fov 68;<br>
+viewmodel_offset_x 2.5;<br>
+viewmodel_offset_y 0;<br>
+viewmodel_offset_z -1.5;<br>
+viewmodel_presetpos 3;<br>
+cl_viewmodel_shift_left_amt 1.5;<br>
+cl_viewmodel_shift_right_amt 0.75;<br>
+viewmodel_recoil 0;<br>
+cl_righthand 1;<br>
+
+<h3>
+NiKo viewmodel(?):
+</h3>
+viewmodel_fov 68;<br>
+viewmodel_offset_x 2.5;<br>
+viewmodel_offset_y 0;<br>
+viewmodel_offset_z -1.5;<br>
+viewmodel_presetpos 3;<br>
+cl_viewmodel_shift_left_amt 1.5;<br>
+cl_viewmodel_shift_right_amt 0.75;<br>
+viewmodel_recoil 0;<br>
+cl_righthand 1;<br>
+</a>
+<h1>
+Links:
+</h1>
+<div>
+</div>
+<a>
+<a href="https://gamebanana.com/scripts/8217" target="external">
+Enhanced BrainMod
+</a>
+<br>
+<a href="https://www.youtube.com/watch?v=fDpkkG6W2zc&list=PLN2hXh9JA2lbuq1xzr0sanZ-Y-gP80om2" target="external">
+BananaGaming tweaks & programs
+</a>
+<br>
+<a href="https://www.youtube.com/watch?v=ekJzqSL7sls&list=PLHF999pjo89Nu55Ep1Y0UHHLKluF5c-IK" target="external">
+TheWarOwl Matchmaking Academy
+<br>
+</a>
+</a>
+<br>
+</a>
+<br>
+<br>
+</div>
+  </body>
+</html>

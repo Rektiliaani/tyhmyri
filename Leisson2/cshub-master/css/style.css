@@ -1,0 +1,92 @@
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+
+
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#52527a;
+  border:0px solid #333333;
+}
+
+.container{
+  width:90%;
+  overflow:visible;
+	padding-left: 5%;
+}
+
+
+
+
+header{
+  background:#333333;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#8A2BE2 3px solid;
+  animation-name: animu;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+#inga{
+}
+
+#boxesr{
+  margin-top:20px;
+}
+
+#boxesr .boxr{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:50px;
+}
+
+
+#boxes{
+  margin-top:20px;
+	font: 2vw Arial, Helvetica, sans-serif;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+	width:10%;
+  padding:7.25%;
+}
+
+
+#boxes .box img{
+  width:100%;
+  transition: transform 0.2s;
+}
+.box img:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+#boxesr .boxr img{
+  width:100px;
+  -webkit-animation: rotation 7s infinite linear;
+}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+
+footer{
+  text-align: center;
+  margin-top:50px;
+  color:#ffffff;
+  background-color:#3366ff;
+}

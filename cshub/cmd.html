@@ -18,7 +18,7 @@
 
   <script src=js/konami.js></script>
 <br>
-<a href=port.html style=font:30px/3.0;>
+<a href=index.html style=font:30px/3.0;>
 Back
 </a>
 <br>
@@ -46,6 +46,7 @@ Misc:
 	cl_updaterate 128;<br>
 	fps_max 0;<br>
 	r_drawtracers_firstperson 0;<br>
+	zoom_sensitivity_ratio_mouse "0.818933027098955175"
 </a>
 <div>
 
@@ -136,7 +137,7 @@ Bhop (auto):
 <a>
 <br>
 <h3>
-Bhop (scroll):
+Jump (scroll):
 </h3>
 </a>
 <br>
@@ -308,6 +309,117 @@ cl_viewmodel_shift_right_amt 0.75;<br>
 viewmodel_recoil 0;<br>
 cl_righthand 1;<br>
 </a>
+
+<h1>My autoexec:
+</h1>
+<div>
+</div>
+<a>
+alias "+jumpthrow" "+jump;-attack"; alias "-jumpthrow" "-jump"; bind z "+jumpthrow";<br> 
+
+sensitivity "0.63";<br>
+zoom_sensitivity_ratio_mouse "0.818933027098955175";<br>
+
+bind "LEFTARROW" "+left";<br>
+bind "RIGHTARROW" "+right";<br>
+
+bind 5 sv_rethrow_last_grenade;<br>
+bind mwheeldown +jump;;<br>
+
+bind v noclip;<br>
+
+bind 3 "use weapon_flashbang";<br>
+bind 4 weapon_molotov;use weapon_incgrenade";<br>
+
+bind "q" = "+showscores; r_cleardecals";<br>
+
+alias "+net" "+score; net_graphheight 0";<br>
+alias "-net" "-score; net_graphheight 9999";<br>
+bind "q" "+net";<br>
+bind "q" "+lookatweapon";<br>
+
+alias "+forwardjumpthrow" "+forward;+jump;-attack";<br>
+alias "-forwardjumpthrow" "-jump;-forward";<br>
+bind "x" "+forwardjumpthrow";<br>
+
+bind "UPARROW" "demo_gototick 1000 relative";<br>
+bind "DOWNARROW" "demo_gototick -1000 relative";<br>
+
+con_enable "1";<br>
+cl_autowepswitch "0";<br>
+cl_join_advertise "2";<br>
+gameinstructor_enable "0";<br>
+cl_teammate_colors_show "1";<br>
+m_rawinput "1";<br>
+
+rate "786432";<br>
+cl_cmdrate "128";<br>
+cl_updaterate "128";<br>
+cl_interp "0";<br>
+cl_interp_ratio "1";<br>
+cl_interpolate "1";<br>
+cl_lagcompensation "1";<br>
+cl_predict "1";<br>
+cl_predictweapons "1";<br>
+net_graph "1";<br>
+fps_max "400";<br>
+fps_max_menu "240";<br>
+mat_monitorgamma "1.6";<br>
+mat_monitorgamma_tv_enabled "0";<br>
+mat_powersavingsmode "0";<br>
+mat_queue_mode "2";<br>
+r_dynamic "0";<br>
+r_drawtracers_firstperson "0";<br>
+r_eyegloss "0";<br>
+r_eyemove "0";<br>
+r_eyeshift_x "0";<br>
+r_eyeshift_y "0";<br>
+r_eyeshift_z "0";<br>
+r_eyesize "0";<br>
+muzzleflash_light "0";<br>
+
+snd_hwcompat "0";<br>
+dsp_enhance_stereo "0";<br>
+snd_front_headphone_position "53.2";<br>
+
+cl_use_opens_buy_menu "0";<br>
+
+alias "nade" "exec nade";<br>
+alias dog god;<br>
+</a>
+<h1>
+Nade Practice cfg:
+</h1>
+<div>
+</div>
+<a>
+sv_cheats 1;<br>
+sv_infinite_ammo 1;<br>
+mp_freezetime 0;<br>
+mp_afterroundmoney 16000;<br>
+mp_startmoney 16000;<br>
+sv_grenade_trajectory 1;<br>
+mp_ignore_round_win_conditions 1;<br>
+impulse 101;<br>
+bot_kick;<br>
+mp_buy_anywhere 1;<br>
+mp_buytime 999999;<br>
+mp_drop_knife_enable 1;<br>
+give weapon_flashbang; buy flashbang;<br>
+give weapon_molotov; buy molotov;<br>
+give weapon_smokegrenade; buy smokegrenade;<br>
+give weapon_hegrenade; buy hegrenade;<br>
+give weapon_c4;<br>
+give weapon_deagle; buy deagle;<br>
+give weapon_ssg08; buy ssg08;<br>
+mp_plant_c4_anywhere 1;<br>
+mp_anyone_can_pickup_c4 1;<br>
+mp_autokick 0;<br>
+removeallids;<br>
+mp_respawn_on_death_ct 1;<br>
+mp_respawn_on_death_t 1;<br>
+</a>
+<div>
 <h1>
 </h1>
 <div>

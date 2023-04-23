@@ -1,92 +1,198 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	    
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <div class="container">  
-	  <title>CSHUB</title>
-    <link rel="stylesheet" href="./css/style.css">
+<head>
+    <title>CSHUB</title>
 	<link rel="shortcut icon" href="./img/rektiliaani.png" />
-	  	 <div id="clockbox"></div>
-		  <style type="text/css">
-		body{
-			background-image:url(img/wall.png
-			);
-			background-size: cover;
-			background-attachment: fixed;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		
+        body {
+            background-color: #0A4D68;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+        }
+		
+		div[style*="background-color:#f8f8f8;"] {
+		  margin-top: 20px;
+		  margin-bottom: 20px;
+		  gap: 20px;
 		}
-		</style>
-  </head>
-<br>
-<br>
-<br>
-<br>	  
-<center>
-<iframe src="https://duckduckgo.com/search.html?prefill=DuckDuckGo" style="overflow:hidden;margin:0;padding:0;width:300px;height:35px;" frameborder="0"></iframe>
-<br>
-<br>
-<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-<input autocomplete="on" class="form-control search" name="q" placeholder="Google"  type="text">
-<button class="button" type="submit">Search 👌</button>
-<br>
-</center>
-<center >
 
-<embed class="col-1" src="./port.html" style="min-width:61%;max-width: 100%; padding-bottom:5%;">
-</center>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(3, 108, 95, 0.6);
+			margin-top: 20px;
+            border-radius: 10px;
+            align-items: center;
+            justify-items: center;
+        }
+		
+
+        .box {
+            text-align: center;
+        }
+
+        .box img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+		@keyframes bounce {
+		0%,
+		20%,
+		50%,
+		80%,
+		100% {
+			transform: translateY(0);
+			}
+		40% {
+			transform: translateY(-5px);
+			}
+		60% {
+			transform: translateY(-5px);
+			}
+		}
+		
+		.box img:hover {
+		animation: bounce 0.5s infinite;
+		}
+
+        .box h3, .box p {
+            margin: 0;
+            padding: 0;
+        }
+		.footer {
+		  background-color: rgba(3, 108, 95, 0.6);
+		  color: #ffffff;
+		  text-align: center;
+		  padding: 10px;
+		  position: fixed;
+		  left: 0;
+		  bottom: 0;
+		  width: 100%;
+		}
+		.spinner-container {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  height: 10px; 
+		}
+
+		.spinner {
+		  animation: spin 5s linear infinite;
+		  height: 50px; 
+		}
+
+		@keyframes spin {
+		  from {
+			transform: rotate(0deg);
+		  }
+		  to {
+			transform: rotate(360deg);
+		  }
+		}
+
+    </style>
+    <link rel="shortcut icon" href="./img/unoreverse.jpg" />
+    <script src="js/konami.js"></script>
+	
+</head>
 
 
 
-  <body>
+<body>
+	<div style="text-align:center;">
+	  <div style="display:inline-block;background-color: rgba(3, 108, 95, 0.6);padding:10px;margin: 10px;margin-top: 0px;border-radius:5px;">
+		<form action="https://duckduckgo.com/html/" method="get" target="_blank" style="display:inline;">
+		  <input type="text" name="q" placeholder="DuckDuckGo" style="width:300px;height:30px;font-size:18px;padding:5px;">
+		  <input type="submit" value="Search 😩" style="height:30px;font-size:18px;">
+		</form>
+	  </div>
+	  <div style="display:inline-block;background-color: rgba(3, 108, 95, 0.6);padding:10px;margin: 10px;margin-top: 0px;border-radius:5px;margin-top:10px;">
+		<form action="https://www.google.com/search" method="get" target="_blank" style="display:inline;">
+		  <input type="text" name="q" placeholder="Google" style="width:300px;height:30px;font-size:18px;padding:5px;">
+		  <input type="submit" value="Search 👌" style="height:30px;font-size:18px;">
+		</form>
+	  </div>
+	</div>
 
-  <div class="container3" style="padding-top:5%;">
-  
-  <div class="centered" style="  background-color:#3366ff; width:80% ">
-	    <center>
-		<a>
-<a href="https://gamebanana.com/scripts/8217" target="external">
-Enhanced BrainMod
-</a>
-<br>
-<a href="https://www.youtube.com/watch?v=fDpkkG6W2zc&list=PLN2hXh9JA2lbuq1xzr0sanZ-Y-gP80om2" target="external">
-BananaGaming tweaks & programs
-</a>
-<br>
-<a href="https://www.youtube.com/watch?v=ekJzqSL7sls&list=PLHF999pjo89Nu55Ep1Y0UHHLKluF5c-IK" target="external">
-TheWarOwl Matchmaking Academy
-<br>
-</a>
-</a>
-   </div>
-      </div>
-		  </center>
-    </section>
-	    </center>
+	<img src="./img/rektiliaani.png" alt="Rektiliaani" class="spinner">
 
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <a target="_blank" rel="noopener noreferrer" href="https://youtube.com">
+                    <img src="./img/tube.png">
+                </a>
+                <h3>YouTube</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <a target="_blank" rel="noopener noreferrer" href="https://blog.counter-strike.net/index.php/category/updates/">
+                    <img src="./img/cuck.png">
+                </a>
+                <h3>Updates</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.hltv.org/">
+                    <img src="./img/hltv.png">
+                </a>
+                <h3>HLTV</h3>
+            </div>
+            <div class="box">
+                <a target="_blank" rel="noopener noreferrer" href="https://csgobackpack.net/">
+                    <img src="./img/backpack.png">
+                </a>
+                <h3>CS:GO Backpack</h3>
+            </div>
+            <div class="box">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.faceit.com/">
+                    <img src="./img/face.png">
+                </a>
+                <h3>FACEIT</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <a href="./cmd.html">
+                    <img src="./img/nade.png">
+                </a>
+                <h3>Commands</h3>
+                <p>For nade practice etc</p>
+            </div>
+            <div class="box">
+                <a target="_blank" rel="noopener noreferrer" href="https://csgo-stats.com/">
+                    <img src="./img/stat.png">
+				</a>
+                <h3>Stats</h3>
+            </div>
+            <div class="box">
+                <a target="_blank" rel="noopener noreferrer" href="https://xplay.gg/">
+                    <img src="./img/xplay.png">
+				</a>
+                <h3>XPLAY.gg</h3>
+				<p>Practice / Warmup servers</p>
+            </div>
+		 </section>
+</body>		 
 
-  
-	          </div>
-	  <p> </p>
-			<p> </p>
-				<p> </p>
-	  <p> </p>
-			<p> </p>
-				<p> </p>
-   <footer>
+ <div class="footer">
+    <a href="https://steamcommunity.com/tradeoffer/new/?partner=387080454&token=xd6GTjrF" style="font: 20px/2;">Donate skins pls (trade url) <3 </a>
 	<br>
-    <a href="https://steamcommunity.com/tradeoffer/new/?partner=387080454&token=xd6GTjrF"style="font: 20px/2;">Donate skins pls (trade url) <3 </a>
-	<br>
-	 <a href="./donators.html"style="font: 20px/2;">Donators <3 UwU OwO <3 </a>
-	<br>
-		<br>
-	<div class="boxr">	
-          <img class="rotate" src="./img/rektiliaani.png" style="animation: rotation 2s infinite linear; width:50px;">
-        </div>
-    </footer>
-		<p> </p>
-			<p> </p>
-				<p> </p>
-</div>
-  </body>
-</html>
+    <a href="./donators.html" style="font: 20px/2;">Donators <3 UwU OwO <3 </a>
+ </div>
+ 
+ </html>
